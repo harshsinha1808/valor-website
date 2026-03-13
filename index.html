@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Valor — Any Metal. Anywhere. Any Scale.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syncopate:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syncopate:wght@400;700&family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --void: #000000;
-    --ash: #0a0a0a;
-    --graphite: #111111;
-    --smoke: #1a1a1a;
-    --iron: #2a2a2a;
-    --steel: #3d3d3d;
-    --silver: #8a8a8a;
-    --chalk: #c8c8c8;
-    --bone: #e8e4dc;
-    --white: #f5f3ef;
-    --gold: #b8975a;
-    --gold-dim: #7a6035;
-    --gold-glow: rgba(184,151,90,0.15);
+    --void: #060d0b;
+    --ash: #0a1210;
+    --graphite: #0f1a17;
+    --smoke: #152320;
+    --iron: #1e3028;
+    --steel: #2e4a3e;
+    --silver: #6a8c7e;
+    --chalk: #b8cec6;
+    --bone: #daeae4;
+    --white: #eef6f2;
+    --gold: #4eb896;
+    --gold-dim: #2d7a62;
+    --gold-glow: rgba(78,184,150,0.12);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,7 +30,7 @@
   body {
     background: var(--void);
     color: var(--chalk);
-    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    font-family: 'Spectral', 'Georgia', serif;
     font-size: 18px;
     line-height: 1.75;
     overflow-x: hidden;
@@ -46,15 +46,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3rem;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(6,13,11,0.98) 0%, rgba(6,13,11,0) 100%);
     backdrop-filter: blur(0px);
     transition: all 0.4s ease;
   }
 
   nav.scrolled {
-    background: rgba(0,0,0,0.97);
+    background: rgba(6,13,11,0.97);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(184,151,90,0.12);
+    border-bottom: 1px solid rgba(78,184,150,0.10);
   }
 
   .nav-logo {
@@ -112,16 +112,16 @@
     position: absolute;
     inset: 0;
     background: 
-      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(184,151,90,0.04) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(184,151,90,0.03) 0%, transparent 60%);
+      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(78,184,150,0.05) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(78,184,150,0.04) 0%, transparent 60%);
   }
 
   .hero-grid {
     position: absolute;
     inset: 0;
     background-image: 
-      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      linear-gradient(rgba(78,184,150,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(78,184,150,0.06) 1px, transparent 1px);
     background-size: 80px 80px;
     mask-image: radial-gradient(ellipse 90% 90% at 50% 50%, black 20%, transparent 100%);
   }
@@ -131,7 +131,7 @@
     font-family: 'Syncopate', sans-serif;
     font-size: 0.45rem;
     letter-spacing: 0.15em;
-    color: rgba(184,151,90,0.12);
+    color: rgba(78,184,150,0.10);
     white-space: nowrap;
     animation: drift 30s linear infinite;
   }
@@ -168,7 +168,7 @@
   }
 
   .hero-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: clamp(3.2rem, 8vw, 7.5rem);
     font-weight: 300;
     line-height: 1.02;
@@ -297,7 +297,7 @@
   }
 
   .section-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: clamp(2.2rem, 5vw, 4rem);
     font-weight: 300;
     line-height: 1.1;
@@ -343,13 +343,13 @@
   }
 
   .tech-stat {
-    border-left: 1px solid rgba(184,151,90,0.3);
+    border-left: 1px solid rgba(78,184,150,0.28);
     padding: 1.5rem 0 1.5rem 2rem;
     margin-bottom: 2rem;
   }
 
   .tech-stat-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 3.5rem;
     font-weight: 300;
     color: var(--gold);
@@ -398,7 +398,7 @@
     font-family: 'Syncopate', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: rgba(184,151,90,0.15);
+    color: rgba(78,184,150,0.12);
     position: absolute;
     top: 1rem; right: 1.5rem;
     line-height: 1;
@@ -440,8 +440,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
-    background: rgba(184,151,90,0.08);
-    border: 1px solid rgba(184,151,90,0.12);
+    background: rgba(78,184,150,0.08);
+    border: 1px solid rgba(78,184,150,0.10);
     margin-bottom: 5rem;
   }
 
@@ -451,10 +451,10 @@
     transition: background 0.3s;
   }
 
-  .milestone:hover { background: rgba(184,151,90,0.04); }
+  .milestone:hover { background: rgba(78,184,150,0.05); }
 
   .milestone-icon {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 2rem;
     color: var(--gold);
     margin-bottom: 0.8rem;
@@ -506,7 +506,7 @@
   .angel:nth-child(3n) { border-right: none; }
 
   .angel-name {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 1.05rem;
     font-weight: 500;
     color: var(--chalk);
@@ -590,7 +590,7 @@
   }
 
   .founder-name {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--white);
@@ -632,8 +632,8 @@
   }
 
   .press-release {
-    border: 1px solid rgba(184,151,90,0.18);
-    background: rgba(184,151,90,0.02);
+    border: 1px solid rgba(78,184,150,0.15);
+    background: rgba(78,184,150,0.03);
     padding: 3.5rem;
     margin-bottom: 3rem;
     position: relative;
@@ -647,7 +647,7 @@
     font-family: 'Syncopate', sans-serif;
     font-size: 0.42rem;
     letter-spacing: 0.3em;
-    color: rgba(184,151,90,0.4);
+    color: rgba(78,184,150,0.38);
   }
 
   .pr-date {
@@ -659,7 +659,7 @@
   }
 
   .pr-headline {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-weight: 500;
     line-height: 1.2;
@@ -687,7 +687,7 @@
     list-style: none;
     padding: 0;
     margin: 1.5rem 0 2rem;
-    border-left: 2px solid rgba(184,151,90,0.3);
+    border-left: 2px solid rgba(78,184,150,0.28);
     padding-left: 1.5rem;
   }
 
@@ -722,7 +722,7 @@
   }
 
   blockquote {
-    border-left: 2px solid rgba(184,151,90,0.4);
+    border-left: 2px solid rgba(78,184,150,0.38);
     padding: 0.5rem 0 0.5rem 1.5rem;
     margin: 1.5rem 0;
   }
@@ -782,7 +782,7 @@
   }
 
   .article-headline {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--white);
@@ -816,7 +816,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    border-bottom: 1px solid rgba(184,151,90,0.3);
+    border-bottom: 1px solid rgba(78,184,150,0.28);
     padding-bottom: 2px;
     transition: gap 0.3s, color 0.3s;
   }
@@ -890,8 +890,8 @@
   }
 
   .element-tile:hover {
-    background: rgba(184,151,90,0.08);
-    border-color: rgba(184,151,90,0.2);
+    background: rgba(78,184,150,0.08);
+    border-color: rgba(78,184,150,0.2);
   }
 
   .element-tile .num {
@@ -903,7 +903,7 @@
   }
 
   .element-tile .sym {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 1.3rem;
     color: var(--chalk);
     display: block;
@@ -948,11 +948,27 @@
   }
 
   .footer-tagline {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 0.95rem;
     font-style: italic;
     color: var(--iron);
     letter-spacing: 0.05em;
+  }
+
+  /* Scanline atmosphere */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(0,0,0,0.03) 3px,
+      rgba(0,0,0,0.03) 4px
+    );
   }
 
   /* --- ANIMATIONS --- */
